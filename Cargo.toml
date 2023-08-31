@@ -6,8 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+allwords = "0.1.2"
 anyhow = "1.0.75"
-futures = { version = "0.3.28", default-features = false }
+async-channel = "1.9.0"
+clap = { version = "4.4.1", features = ["derive"] }
+num_cpus = "1.16.0"
 tokio = { version = "1.32.0", features = [
   "macros",
   "process",
